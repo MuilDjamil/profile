@@ -25,7 +25,6 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--TEXT-COLOR);
   background-color: var(--BG-COLOR);
-  min-height: 200vh;
 }
 
 /* || Reset */
