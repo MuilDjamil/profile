@@ -124,10 +124,6 @@ button {
   color: var(--BG-COLOR);
 }
 
-.button > a {
-  color: var(--BG-COLOR);
-}
-
 /* || Navbar */
 .header__navbar {
   position: fixed;
@@ -465,9 +461,6 @@ button {
 .button--hire {
   border: 2px solid var(--PRIMARY-COLOR);
   background-color: var(--BG-COLOR);
-}
-
-.button--hire > a {
   color: var(--PRIMARY-COLOR);
 }
 
