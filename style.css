@@ -136,6 +136,7 @@ button {
 }
 
 .header__navbar > .container {  
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,6 +147,22 @@ button {
   display: none;
   align-items: center;
   gap: 1.95em;
+}
+
+.header__navigation.mobile {
+  transform-origin: top;
+  animation: open-menu .5s ease-in-out forwards;
+  padding: 1.5em;
+  background-color: #fff;
+  top: clamp(50px, 9vw, 90px);
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.header__navigation.mobile li {
+  padding-block: 1.2em;
 }
 
 .header__navigation ul {
@@ -162,6 +179,7 @@ button {
   color: var(--PRIMARY-COLOR);
   font-size: 2.8rem;
   cursor: pointer;
+  user-select: none;
 }
 
 /* || Hero */
@@ -337,6 +355,16 @@ button {
   padding-inline: clamp(1em, 2vw, 3em);
 }
 
+.skillset__decription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillset__decription-percentage {
+  color: var(--PRIMARY-COLOR);
+  font-weight: 600;
+}
+
 .skillset__progress-bar {
   position: relative;
   width: 100%;
@@ -345,66 +373,9 @@ button {
   box-shadow: var(--STANDARD-BOX-SHADOW);
 }
 
-.skillset__progress-bar::after {
-  position: absolute;
-  top: -30px;
-  color: var(--PRIMARY-COLOR);
-  font-weight: 600;
-  right: 0;
-  font-size: 1.6rem;
-}
-
-.skillset__progress-bar.css::after {
-  content: '90%';
-}
-
-.skillset__progress-bar.javascript::after {
-  content: '85%';
-}
-
-.skillset__progress-bar.react::after {
-  content: '80%';
-}
-
-.skillset__progress-bar.express::after {
-  content: '70%';
-}
-
-.skillset__progress-bar.php::after {
-  content: '80%';
-}
-
-.skillset__progress-bar.mysql::after {
-  content: '90%';
-}
-
 .skillset__bar {
   height: 4px;
   background-color: var(--PRIMARY-COLOR);
-}
-
-.skillset__bar.css {
-  width: 90%;
-}
-
-.skillset__bar.javascript {
-  width: 85%;
-}
-
-.skillset__bar.react {
-  width: 80%;
-}
-
-.skillset__bar.express {
-  width: 70%;
-}
-
-.skillset__bar.php {
-  width: 80%;
-}
-
-.skillset__bar.mysql {
-  width: 90%;
 }
 
 /* || Projects */
@@ -540,5 +511,19 @@ button {
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 80%;
+  }
+}
+
+@keyframes open-menu {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.2);
+  }
+
+  100% {
+    transform: scaleY(1);
   }
 }

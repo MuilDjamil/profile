@@ -14,9 +14,9 @@
       <div class="container">
         <h1 class="header__brand">Muil <span class="text-primary">Djamil</span></h1>
         <div class="nav-button">
-          <iconify-icon class="icon" icon="iconamoon:menu-burger-horizontal-duotone"></iconify-icon>
+          <iconify-icon id="nav-button" class="icon" icon="iconamoon:menu-burger-horizontal-duotone"></iconify-icon>
         </div>
-        <nav class="header__navigation">
+        <nav class="header__navigation" id="navigation">
           <ul>
             <li>
               <a href="#">Home</a>
@@ -170,43 +170,8 @@
       <div class="container">
         <h3 class="text-center">What I Know</h3>
         <h2 class="text-primary text-center">My Skillset</h2>
-        <div class="skillset__list">
-          <div class="skillset__item">
-            <p>CSS</p>
-            <div class="skillset__progress-bar css">
-              <div class="skillset__bar css"></div>
-            </div>
-          </div>
-          <div class="skillset__item">
-            <p>Javascript</p>
-            <div class="skillset__progress-bar javascript">
-              <div class="skillset__bar javascript"></div>
-            </div>
-          </div>
-          <div class="skillset__item">
-            <p>React</p>
-            <div class="skillset__progress-bar react">
-              <div class="skillset__bar react"></div>
-            </div>
-          </div>
-          <div class="skillset__item">
-            <p>Express</p>
-            <div class="skillset__progress-bar express">
-              <div class="skillset__bar express"></div>
-            </div>
-          </div>
-          <div class="skillset__item">
-            <p>PHP</p>
-            <div class="skillset__progress-bar php">
-              <div class="skillset__bar php"></div>
-            </div>
-          </div>
-          <div class="skillset__item">
-            <p>MySQL</p>
-            <div class="skillset__progress-bar mysql">
-              <div class="skillset__bar mysql"></div>
-            </div>
-          </div>
+        <div class="skillset__list" id="skillset-list">
+          
         </div>
       </div>
     </section>
@@ -215,43 +180,8 @@
       <div class="container">
         <h3 class="text-center">My Latest</h3>
         <h2 class="text-primary text-center">Project Showcase</h2>
-        <div class="projects__container">
-          <div class="projects__item">
-            <img src="/assets/project9.webp" alt="project9s">
-            <a class="projects__show" target="_blank" href="https://pladia.vercel.app/">
-              <iconify-icon icon="mdi:eye"></iconify-icon>
-            </a>
-          </div>
-          <div class="projects__item">
-            <img src="/assets/project8.webp" alt="project8">
-            <a class="projects__show" target="_blank" href="https://great-outdoor.vercel.app/">
-              <iconify-icon icon="mdi:eye"></iconify-icon>
-            </a>
-          </div>
-          <div class="projects__item">
-            <img src="/assets/project7.webp" alt="project7">
-            <a class="projects__show" target="_blank" href="https://revolution-barbershop.vercel.app/">
-              <iconify-icon icon="mdi:eye"></iconify-icon>
-            </a>
-          </div>
-          <div class="projects__item">
-            <img src="/assets/project1.webp" alt="project1">
-            <a class="projects__show" target="_blank" href="http://healthcare-solutions.vercel.app/">
-              <iconify-icon icon="mdi:eye"></iconify-icon>
-            </a>
-          </div>
-          <div class="projects__item">
-            <img src="/assets/project2.webp" alt="project2">
-            <a class="projects__show" target="_blank" href="https://muilfurniture.netlify.app/">
-              <iconify-icon icon="mdi:eye"></iconify-icon>
-            </a>
-          </div>
-          <div class="projects__item">
-            <img src="/assets/project3.webp" alt="project3">
-            <a class="projects__show" target="_blank" href="https://bookshelfy.vercel.app/">
-              <iconify-icon icon="mdi:eye"></iconify-icon>
-            </a>
-          </div>
+        <div class="projects__container" id="project-list">
+          
         </div>
       </div>
     </section>
@@ -260,5 +190,7 @@
   <footer class="footer">
     <p>Still being developed <span><iconify-icon icon="mdi:love"></iconify-icon></span> <span class="no-wrap">Muil Djamil</span></p>
   </footer>
+
+  <script src="/script.js" type="module"></script>
 </body>
 </html>
