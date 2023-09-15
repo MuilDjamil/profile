@@ -212,6 +212,10 @@ button {
   display: none;
 }
 
+.header__hero-button {
+  justify-self: start;
+}
+
 /* || About */
 #about {
   scroll-margin-top: 6em;
