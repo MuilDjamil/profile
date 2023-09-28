@@ -30,36 +30,36 @@ body {
 /* || Reset */
 h1 {
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 2.8em;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3em;
   line-height: 1;
   margin-bottom: .5em;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.4em;
   font-weight: 600;
   line-height: 1;
   margin-bottom: .5em;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 2em;
   line-height: 1;
   margin-bottom: .5em;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   margin-bottom: .6em;
   font-weight: 400;
 }
 
 a {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   text-decoration: none;
   color: var(--TEXT-COLOR);
   font-weight: 300;
@@ -72,7 +72,7 @@ img {
 }
 
 button {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: inherit;
   outline: none;
   border: none; 
@@ -102,8 +102,8 @@ button {
   vertical-align: middle;
   margin-block: auto;
   width: 1.2em;
-  height: 3px;
-  border-radius: 5px;
+  height: .3rem;
+  border-radius: .4em;
   background-color: var(--PRIMARY-COLOR);
 }
 
@@ -132,7 +132,7 @@ button {
   width: 100%;
   z-index: 1;
   background-color: var(--BG-COLOR);
-  box-shadow: 0 0 18px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 1.1em rgba(0, 0, 0, .1);
 }
 
 .header__navbar > .container {  
@@ -154,7 +154,7 @@ button {
   animation: open-menu .5s ease-in-out forwards;
   padding: 1.5em;
   background-color: #fff;
-  top: clamp(50px, 9vw, 90px);
+  top: clamp(5rem, 9vw, 9rem);
   left: 0;
   position: absolute;
   display: block;
@@ -177,7 +177,7 @@ button {
 .nav-button .icon {
   display: block;
   color: var(--PRIMARY-COLOR);
-  font-size: 2.8rem;
+  font-size: 2.8em;
   cursor: pointer;
   user-select: none;
 }
@@ -200,7 +200,7 @@ button {
 }
 
 .header__hero-h2 {
-  font-size: clamp(4rem, 4vw, 5rem);
+  font-size: clamp(4em, 4vw, 5em);
   margin-bottom: .35em;
 }
 
@@ -236,7 +236,7 @@ button {
   display: inline-block;
   background-color: hsl(0, 0%, 93%);
   height: auto;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 .4em rgba(0, 0, 0, .2);
   width: clamp(60%, 50vw, 80%);
   padding-inline: 2em;
 }
@@ -248,12 +248,12 @@ button {
 .about__image::after {
   z-index: -1;
   position: absolute;
-  top: 17px;
-  left: 17px;
+  top: 1.7rem;
+  left: 1.7rem;
   content: '';
   height: 100%;
   width: 100%;
-  border: 6px solid var(--PRIMARY-COLOR);
+  border: .5em solid var(--PRIMARY-COLOR);
 }
 
 .about__socials {
@@ -280,7 +280,7 @@ button {
 }
 
 .about__text-bio {
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: .1em solid rgba(0, 0, 0, .1);
 }
 
 .about__text-identity {
@@ -292,7 +292,7 @@ button {
 }
 
 .about__identity-item h4 {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   margin-bottom: .1em;
 }
 
@@ -321,26 +321,16 @@ button {
   margin-bottom: .2em;
 }
 
-/* .qualifications__card::before {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  content: '';
-  background-color: var(--PRIMARY-COLOR);
-  width: 25px;
-  height: 15px;
-} */
-
 .qualifications__card {
   position: relative;
-  border-left: 3px solid var(--PRIMARY-COLOR);
+  border-left: .2em solid var(--PRIMARY-COLOR);
   background-color: var(--GRAY-BG-COLOR);
   flex: 1;
   padding: 2.4em 2.8em 1.2em;
 }
 
 .qualifications__sub-pharagraph {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-style: italic;
   margin-bottom: .2em;
 }
@@ -372,13 +362,13 @@ button {
 .skillset__progress-bar {
   position: relative;
   width: 100%;
-  height: 4px;
+  height: .4rem;
   background-color: var(--GRAY-BG-COLOR);
   box-shadow: var(--STANDARD-BOX-SHADOW);
 }
 
 .skillset__bar {
-  height: 4px;
+  height: .4rem;
   background-color: var(--PRIMARY-COLOR);
 }
 
@@ -392,7 +382,7 @@ button {
 }
 
 .projects__item {
-  border-radius: 2px;
+  border-radius: .1em;
   overflow: hidden;
   box-shadow: var(--STANDARD-BOX-SHADOW);
   display: grid;
@@ -414,7 +404,7 @@ button {
   z-index: 1;
   grid-row: 1 / -1;
   grid-column: 1 / -1;
-  font-size: 6rem;
+  font-size: 6em;
   color: var(--BG-COLOR);
   border-radius: 50%;
 }
@@ -434,7 +424,7 @@ button {
 
 /* || Modifier */
 .button--hire {
-  border: 2px solid var(--PRIMARY-COLOR);
+  border: .1em solid var(--PRIMARY-COLOR);
   background-color: var(--BG-COLOR);
   color: var(--PRIMARY-COLOR);
 }
@@ -489,7 +479,7 @@ button {
   .header__hero-image img {
     height: clamp(30em, 40vw, 50em);
     transform: rotateY(180deg);
-    margin-bottom: -5px;
+    margin-bottom: -.3em;
   }
 
   /* || About */
